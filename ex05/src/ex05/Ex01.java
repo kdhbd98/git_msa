@@ -1,0 +1,17 @@
+package ex05;
+
+public class Ex01 {
+	
+	// ctrl + space 자동완성
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 3;
+		boolean result = 10 % 3 == 0 || (a += 10) > 0;
+		boolean result1 = 10 % 3 == 0 && (a += 10) > 0;
+		
+		System.out.println(result);
+		System.out.println(result1);
+		System.out.println(a);
+	}
+
+}
