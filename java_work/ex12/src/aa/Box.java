@@ -30,7 +30,7 @@ public class Box {
     // toString() 주소값 출력
     // 프로그래머가 직접 적게 되면 내용이 변화함
     public String toString() {
-        return "Box name = " + name + "count = " + count;
+        return "Box name = " + name + " count = " + count;
     }
 
     // 메서드 이름이 동일할 수 없다.
