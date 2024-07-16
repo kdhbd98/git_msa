@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 30px;
+            line-height: 100px;
+            text-transform: uppercase;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+        .container {
+            width: 1140px;
+            background-color: slategray;
+            margin: 0 auto;
+            height: 100px;
+        }
+        .active{
+            border: 1px solid white;
+        }
+        a:hover {
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a class="active" href="#">menu</a></li>
+            <li><a href="#" id="menu1">reservation</a></li>
+            <li><a href="#" id="menu2">rooms</a></li>
+            <li><a href="#" id="menu3">signin</a></li>
+            <li><a href="#" id="menu4">signup</a></li>
+        </ul>
+        <div id="div1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptatum quaerat ducimus odio,
+                omnis autem amet repellendus provident molestiae voluptas maxime. Voluptate porro eius adipisci nemo
+                totam veritatis laudantium neque?</p>
+        </div>
+        <div id="div2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati voluptatum quaerat ducimus odio,
+                omnis autem amet repellendus provident molestiae voluptas maxime. Voluptate porro eius adipisci nemo
+                totam veritatis laudantium neque?</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $('#menu1').mouseenter(function(){$('#div1').fadeIn();});
+        $('#menu1').mouseleave(function(){$('#div1').fadeOut();});
+        $('#menu2').click(function(){$('#div2').fadeToggle();});
+        });
+</script>
