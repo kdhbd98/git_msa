@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Cafe24Meongi-W-v1.0';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cafe24Meongi-W-v1.0';
+            color: gray;
+        }
+
+        .header,
+        .footer {
+            height: 100px;
+        }
+
+        .header {
+            background-color: aliceblue;
+        }
+
+        .content {
+            overflow: hidden;
+            background-color: azure;
+        }
+
+        .footer {
+            background-color: aliceblue;
+        }
+
+        .leftside {
+            float: left;
+            height: 500px;
+            background-color: ghostwhite;
+        }
+
+        .center {
+            float: left;
+            height: 500px;
+        }
+
+        .rightside {
+            float: right;
+            height: 500px;
+            background-color: ghostwhite;
+        }
+
+        .myfix {
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            background-color: honeydew;
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .myst {
+            position: sticky;
+            background-color: seashell;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>title</h1>
+        </div>
+        <div class="myst">
+            <h2>establish</h2>
+        </div>
+        <div class="content">
+            <div class="leftside">
+                <h2>left</h2>
+            </div>
+            <div class="center">
+                <h2>center</h2>
+            </div>
+            <div class="rightside">
+                <h2>right</h2>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>footer</h1>
+        </div>
+    </div>
+    <div class="myfix"></div>
+</body>
+
+</html>
