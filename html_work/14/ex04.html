@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back{
+            margin: 30px;
+            height: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .back::before {
+            background-image: url(/8/bbb.jpg);
+            background-size: cover;
+            content: '';
+            opacity: 0.5;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .container{
+            position: relative;
+        }
+
+        h1 {
+            color: black;
+            text-shadow: 2px 2px 5px black;
+        }
+        .grad{
+            height: 300px;
+            background: linear-gradient(rgb(0, 255, 55), blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class="container">
+            <h1>I can do it.</h1>
+            <div>context</div>
+        </div>
+    </div>
+    <div class="grad">
+
+    </div>
+</body>
+
+</html>
