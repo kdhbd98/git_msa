@@ -13,7 +13,6 @@ import org.example.aa.Student;
 
 public class Main {
 
-    //mikmimimi
     Main(){
         Student student = new Student("박문치", 90,80, 70);
         System.out.println(student);
