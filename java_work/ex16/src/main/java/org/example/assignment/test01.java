@@ -6,7 +6,7 @@ public class test01 {
                 throw new IllegalArgumentException("배열이 비어있거나 null입니다.");
             }
 
-            int min = arr[0]; // 초기값 설정
+            int min = arr[0];
             for (int i = 1; i < arr.length; i++) {
                 if (arr[i] < min) {
                     min = arr[i];
@@ -20,7 +20,7 @@ public class test01 {
                 throw new IllegalArgumentException("배열이 비어있거나 null입니다.");
             }
 
-            int max = arr[0]; // 초기값 설정
+            int max = arr[0];
             for (int value : arr) {
                 if (value > max) {
                     max = value;

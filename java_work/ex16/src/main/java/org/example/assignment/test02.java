@@ -9,7 +9,7 @@ public class test02 {
 
     public static void addTwoDArr(int[][] arr, int add) {
         for (int i = 0; i < arr.length; i++) {
-            addOneDArr(arr[i], add); 
+            addOneDArr(arr[i], add);
         }
     }
 
