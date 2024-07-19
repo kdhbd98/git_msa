@@ -30,7 +30,7 @@ public class test01 {
         }
 
         public static void main(String[] args) {
-            int[] numbers = {3, 5, 1, 8, 2};
+            int[] numbers = {10,20,5,9,35,100};
 
             int min = minValue(numbers);
             int max = maxValue(numbers);
