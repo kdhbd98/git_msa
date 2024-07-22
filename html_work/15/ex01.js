@@ -36,7 +36,7 @@ function max() {
 aa.addEventListener('click', min)
 bb.addEventListener('click', max)
 
-printDiv.textContent = "Hello It's just a context."
+printDiv.textContent = "Hello, It's just a context."
 
 const cc = 10;
 let dd = 10;
