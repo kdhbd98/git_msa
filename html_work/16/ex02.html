@@ -6,10 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        input{ display : none }
-        #cb1:checked ~ #lab1{border: 1px solid black;}
-        #cb2:checked ~ #lab2{border: 1px solid black;}
-        #cb3:checked ~ #lab3{border: 1px solid black;}
+        @font-face {
+            font-family: 'intelone-mono-font-family-italic';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-italic.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'intelone-mono-font-family-italic';
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 0px 20px;
+        }
+
+        label::after {
+            height: 0.7rem;
+            content: '*****';
+            border-right: 1px solid black;
+        }
+
+        .my-div {
+            display: none;
+        }
+
+        #cb2:checked~#lab2 {
+            background-color: darkgray;
+        }
+
+        #cb3:checked~#lab3 {
+            background-color: darkgray;
+        }
+
+        #cb1:checked~#lab1 {
+            background-color: darkgray;
+        }
+
+        #cb1:checked~#div-1 {
+            display: block;
+        }
+
+        #cb2:checked~#div-2 {
+            display: block;
+        }
+
+        #cb3:checked~#div-3 {
+            display: block;
+        }
+
+        [type=radio] {}
+
+        [for=cb1] {
+            color: gray;
+        }
     </style>
 </head>
 
@@ -22,15 +77,18 @@
         <label for="cb1" id="lab1">cb1</label>
         <label for="cb2" id="lab2">cb2</label>
         <label for="cb3" id="lab3">cb3</label>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati debitis perspiciatis aliquid
+        <div class="my-div" id="div-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati
+            debitis perspiciatis aliquid1
             sit doloribus vitae esse adipisci id quod ipsa ducimus molestias consequatur assumenda eveniet non
-            quibusdam, odio ab.</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati debitis perspiciatis aliquid
+            quibusdam, odio ab1.</div>
+        <div class="my-div" id="div-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati
+            debitis perspiciatis aliquid2
             sit doloribus vitae esse adipisci id quod ipsa ducimus molestias consequatur assumenda eveniet non
-            quibusdam, odio ab.</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati debitis perspiciatis aliquid
+            quibusdam, odio ab2.</div>
+        <div class="my-div" id="div-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati
+            debitis perspiciatis aliquid3
             sit doloribus vitae esse adipisci id quod ipsa ducimus molestias consequatur assumenda eveniet non
-            quibusdam, odio ab.</div>
+            quibusdam, odio ab3.</div>
     </div>
 </body>
 
