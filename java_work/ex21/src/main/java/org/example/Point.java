@@ -10,6 +10,14 @@ public class Point {
     }
 
     public void showPoint(){
+
         System.out.printf("[%d, %d]\n", xpos,ypos);
+    }
+
+    public void setXpos(int xpos){
+        this.xpos = xpos;
+    }
+    public void setYpos(int ypos){
+        this.ypos = ypos;
     }
 }
