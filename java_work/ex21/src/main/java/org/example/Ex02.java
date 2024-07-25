@@ -10,7 +10,7 @@ public class Ex02 {
         p1.showPoint();
         p2.showPoint();
 
-        p1.setYpos(30);
+        p1.setXpos(30);
         p1.setYpos(40);
 
         p1.showPoint();
