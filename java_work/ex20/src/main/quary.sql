@@ -1,2 +1,2 @@
-INSERT INTO student
+studentINSERT INTO student
 VALUES('유하민', 90, 100, 95)

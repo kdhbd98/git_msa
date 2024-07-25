@@ -8,11 +8,12 @@ public class Main {
     public static void main(String[] args) {
         try {
             Connection conn
-                    = DriverManager.getConnection("jdbc:mysql://192.168.0.29:3307/aaa", "root", "1234");
+                    = DriverManager.getConnection("jdbc:mysql://127.0.0.1" +
+                    ":3307/aaa", "root", "1234");
             System.out.println("Did it work?");
 
             PreparedStatement pstmt
-                    = conn.prepareStatement("INSERT INTO student values ('유하민',100,90,80)");
+                    = conn.prepareStatement("INSERT INTO student values ('유하민',100,90,95)");
             pstmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
