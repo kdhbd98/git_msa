@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+                theme: {
+                    container: {
+                        padding: {
+                            DEFAULT: '1rem',
+                            sm: '2rem',
+                            lg: '4rem',
+                            xl: '5rem',
+                            '2xl': '6rem',
+                        },
+                    },
+                },
+                colors: {
+                    clifford: '#da373d',
+                    adhd: 'red',
+                }
+            }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'BagelFatOne-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'BagelFatOne-Regular';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="md:container md:mx-auto md:px-3 bg-pink-100 hover:bg-pink-500 cursor-pointer">
+        <h1>Cake</h1>
+        <p>Here is a piece of special cake for you!</p>
+    </div>
+    <h1 class="text-5xl font-bold underline text-red-400 text-center">
+        A piece of Cake!
+    </h1>
+    <h1 class="text-3xl font-bold underline text-red-300 text-center">
+        Sweet and delicious
+    </h1>
+    <div class="flex text-2xl my-3 mx-3 justify-center gap-3">
+        <div class="flex bg-pink-200">candy</div>
+        <div class="flex bg-pink-300">cookie</div>
+        <div class="flex bg-pink-400">chocolate</div>
+    </div>
+    <div>
+        <form class="flex items-center space-x-6 justify-center">
+            <div class="shrink-0">
+              <img class="h-16 w-16 object-cover rounded-full" src="https://th.bing.com/th/id/OIP.HTYVOUBuM85isHywYdjrPgHaHA?w=199&h=188&c=7&r=0&o=5&pid=1.7" alt="Current profile photo" />
+            </div>
+            <label class="block">
+              <span class="sr-only">Choose profile photo</span>
+              <input type="file" class="block w-full text-sm text-slate-500
+                file:mr-4 file:py-2 file:px-4
+                file:rounded-full file:border-0
+                file:text-sm file:font-semibold
+                file:bg-violet-50 file:text-violet-700
+                hover:file:bg-violet-100
+              "/>
+            </label>
+          </form>
+    </div>
+</body>
+
+</html>
