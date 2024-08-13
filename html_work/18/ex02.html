@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'YoonChildfundkoreaManSeh';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaManSeh.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'YoonChildfundkoreaManSeh';
+        }
+
+        div {
+            transition: 2s;
+        }
+
+        #mydiv {
+            height: 200px;
+            background-color:rgb(255, 227, 255);
+        }
+
+        #aa:checked~#mydiv {
+            display: none;
+        }
+
+        #aa:checked~#prodiv {
+            transform: rotate(45deg);
+        }
+
+        #prodiv {
+            position: absolute;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="aa">check</label>
+    <input type="checkbox" name="aa" id="aa">
+    <div id="mydiv"></div>
+    <div id="prodiv">
+        <h1>product</h1>
+        <p>high quality</p>
+    </div>
+</body>
+
+</html>
