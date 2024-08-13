@@ -1,5 +1,11 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class Ex04 {
     public static <T> Box makeBox(T t) {
         Box<T> box = new Box<>();
@@ -8,10 +14,19 @@ public class Ex04 {
     }
 
     public static void main(String[] args) {
-        Box<String> box1 = /* Ex04.<String> => 생략가능*/makeBox("test");
+        Box<String> box1 = /* Ex04.<String>*/makeBox("test");
         Box<Integer> box2 = makeBox(20);
 
         System.out.println(box1);
         System.out.println(box2);
+
+        List<String> list = Arrays.asList("Brandon", "Sully", "Rick");
+        List<Integer> ilist = list
+                .stream()
+                .mapToInt(value -> value.length())
+                .boxed()
+                .collect(Collectors.toList());
+        System.out.println(list);
+        System.out.println(ilist);
     }
 }
