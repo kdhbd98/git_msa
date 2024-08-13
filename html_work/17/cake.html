@@ -7,22 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-                theme: {
-                    container: {
-                        padding: {
-                            DEFAULT: '1rem',
-                            sm: '2rem',
-                            lg: '4rem',
-                            xl: '5rem',
-                            '2xl': '6rem',
-                        },
+            theme: {
+                container: {
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
                     },
                 },
-                colors: {
-                    clifford: '#da373d',
-                    adhd: 'red',
-                }
+            },
+            colors: {
+                clifford: '#da373d',
+                adhd: 'red',
             }
+        }
     </script>
     <style>
         @font-face {
@@ -34,6 +34,18 @@
 
         * {
             font-family: 'BagelFatOne-Regular';
+        }
+
+        img {
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            vertical-align: middle;
+        }
+        
+        .centered-div {
+            text-align: center;
         }
     </style>
 </head>
@@ -54,22 +66,27 @@
         <div class="flex bg-pink-300">cookie</div>
         <div class="flex bg-pink-400">chocolate</div>
     </div>
+    <div class="centered-div">
+        <img src="/17/cake.jpg" alt="cake">
+    </div>
     <div>
         <form class="flex items-center space-x-6 justify-center">
             <div class="shrink-0">
-              <img class="h-16 w-16 object-cover rounded-full" src="https://th.bing.com/th/id/OIP.HTYVOUBuM85isHywYdjrPgHaHA?w=199&h=188&c=7&r=0&o=5&pid=1.7" alt="Current profile photo" />
+                <img class="h-16 w-16 object-cover rounded-full"
+                    src="https://th.bing.com/th/id/OIP.HTYVOUBuM85isHywYdjrPgHaHA?w=199&h=188&c=7&r=0&o=5&pid=1.7"
+                    alt="Current profile photo" />
             </div>
             <label class="block">
-              <span class="sr-only">Choose profile photo</span>
-              <input type="file" class="block w-full text-sm text-slate-500
+                <span class="sr-only">Choose profile photo</span>
+                <input type="file" class="block w-full text-sm text-slate-500
                 file:mr-4 file:py-2 file:px-4
                 file:rounded-full file:border-0
                 file:text-sm file:font-semibold
                 file:bg-violet-50 file:text-violet-700
                 hover:file:bg-violet-100
-              "/>
+              " />
             </label>
-          </form>
+        </form>
     </div>
 </body>
 
