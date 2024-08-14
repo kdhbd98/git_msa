@@ -2,23 +2,28 @@ package org.example.DB;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
 
 public class DBRepository {
     public void insert() {
         try {
-
-//          1. mysql jar 추가 확인
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("name : ");
+            String name = scanner.next();
+            System.out.println("age : ");
+            int age = scanner.nextInt();
             Class.forName("com.mysql.cj.jdbc.Driver");
-
-//          2. connection 연결
             Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1/new", "root", "1234");
             System.out.println("success");
-
-//          3. sql 문 작성
+            PreparedStatement preparedStatement
+                    = connection.prepareStatement("Insert into member (name, age) VALUES (?,?)");
+            preparedStatement.setString(1, name);
+            preparedStatement.setInt(2, age);
+            preparedStatement.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Come on.");
     }
 
     public void select() {

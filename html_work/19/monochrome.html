@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monochrome</title>
+    <style>
+        #container {
+            height: 600px;
+            width: 600px;
+            border: 1px solid grey;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            /* 기본 설정이 row이다. */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+        }
+
+        #container>div {
+            width: 100px;
+            height: 100px;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        #container>div:nth-child(1) {
+            background-color: whitesmoke;
+        }
+
+        #container>div:nth-child(2) {
+            background-color: rgb(167, 167, 167);
+        }
+
+        #container>div:nth-child(3) {
+            background-color: rgb(112, 112, 112);
+        }
+
+        #container>div:nth-child(4) {
+            background-color: rgb(78, 78, 78);
+        }
+
+        #container>div:nth-child(5) {
+            background-color: rgb(44, 44, 44);
+        }
+
+        #container>div:nth-child(6) {
+            background-color: rgb(15, 15, 15);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>
